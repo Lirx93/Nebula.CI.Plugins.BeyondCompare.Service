@@ -1,0 +1,27 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/Nebula.CI.Plugins.BeyondCompare.Service.dll",
+            "args": ["http://localhost:21000/Cmd", "D:\\用户\\Desktop\\bcompare\\示例\\示例.zip", "D:\\用户\\Desktop\\bcompare\\BC4\\BComp.com /silent @folder.txt aaa bbb ret\\1.xml", "ret\\"],
+            //"args": ["http://172.18.67.162:21000/Cmd", "D:\\用户\\Desktop\\testc++.zip", "cpptestcli -data  .\\ -resource \"VCUnitTest\"   -config \"user://Generate Unit Tests\"  -report Report1\\GenerateUnitTests.htm", "Report1\\"],
+            //"args": ["http://172.18.67.162:21000/Cmd", "D:\\用户\\Desktop\\testc++.zip", "cpptestcli -data  .\\ -resource \"VCUnitTest\"   -config \"user://Run Unit Tests\"  -report Report1\\RunUnitTests.htm", "Report1\\"],
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}
